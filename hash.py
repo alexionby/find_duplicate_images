@@ -7,6 +7,7 @@ from tqdm import tqdm
 
 from PIL import Image
 
+# Difference Hash
 def dhash(image, hashSize=8):
 	# resize the input image, adding a single column (width) so we
 	# can compute the horizontal gradient
@@ -16,6 +17,8 @@ def dhash(image, hashSize=8):
 	diff = resized[:, 1:] > resized[:, :-1]
 	# convert the difference image to a hash
 	return sum([2 ** i for (i, v) in enumerate(diff.flatten()) if v])
+
+
 
 images = glob.glob('redhead_final/*') 
 print(len(images))
