@@ -5,3 +5,11 @@
 3. https://towardsdatascience.com/finding-duplicate-images-with-python-71c04ec8051
 4. https://www.pyimagesearch.com/2020/04/20/detect-and-remove-duplicate-images-from-a-dataset-for-deep-learning/
 5. https://content-blockchain.org/research/testing-different-image-hash-functions/
+6. https://programmer.help/blogs/hash-hamming-distance-for-similarity-measurement.html
+
+unset saved pass on MacOS:
+```
+git credential-osxkeychain erase
+host=github.com
+protocol=https
+```
